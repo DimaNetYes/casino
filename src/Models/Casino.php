@@ -51,7 +51,7 @@ class Casino extends ActiveRecordEntity
 
     protected static function getTableName(): string
     {
-        return 'games';
+        return 'casinos';
     }
 
     public function setName($casino): string

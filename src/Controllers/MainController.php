@@ -20,14 +20,13 @@ class MainController extends AbstractController
 
     public function main()
     {
-        $casinos = $this->db->query("SELECT * FROM `games`", [], Casino::class);
-//        $casinos = Casino::getAll();
+//        $casinos = $this->db->query("SELECT * FROM `casinos`", [], Casino::class);
+        $casinos = Casino::getAll();
         $this->view->renderHtml('main/main.php', ['casinos' => $casinos]);
     }
 
     public function sayHello($name)
     {
-//        phpinfo();
             $this->view->renderHtml("main/hello.php", ['name' => $name]);
     }
 }
