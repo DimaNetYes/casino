@@ -1,0 +1,34 @@
+@mixin adaptive($media){
+  @if $media == smart{
+    @media only screen and (max-width: 480px) {@content};
+  }
+  @else if $media == tablet{
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {@content};
+  }
+  @else if $media == PC{
+    @media only screen and (min-width: 1025px) {@content};
+  }
+}
+
+*{
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  //font-size: 0px;
+}
+body{
+
+    @include adaptive(smart){
+      background: red;
+    }
+
+}
+.container{
+  @include adaptive(smart){
+    border: 1px solid black;
+  }
+}
+
+
+
+

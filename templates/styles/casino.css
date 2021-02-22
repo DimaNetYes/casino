@@ -1,0 +1,14 @@
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: red; } }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    border: 1px solid black; } }
+
+/*# sourceMappingURL=casino.css.map */

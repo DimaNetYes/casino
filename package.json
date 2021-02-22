@@ -1,0 +1,20 @@
+{
+  "name": "vishnya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch styles -o styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaNetYes/casino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaNetYes/casino/issues"
+  },
+  "homepage": "https://github.com/DimaNetYes/casino#readme"
+}
