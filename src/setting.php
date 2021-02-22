@@ -6,6 +6,6 @@ return [
         'host' => 'localhost',
         'dbname' => 'PlayJosh',
         'user' => 'root',
-        'password' => 'Hello_world1',
+        'password' => '',
     ]
 ];
