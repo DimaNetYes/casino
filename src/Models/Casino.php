@@ -13,7 +13,7 @@ class Casino extends ActiveRecordEntity
 //    protected $casinoId;
     protected $casino;
     protected $bonus;
-    protected  $rating, $upTo, $freeSpeen;
+    protected  $rating, $upTo, $freeSpeen, $name;
 
     public function getAuthorId(): int
     {

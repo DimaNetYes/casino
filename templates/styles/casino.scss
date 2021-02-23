@@ -142,7 +142,9 @@
       //border-left: 21px solid rgb(160,0,201);
 
     }
-
+    #cas_name{
+      display: none;
+    }
     & .casino__part_2{
 
       & span{
@@ -249,8 +251,234 @@
   }
 }
 
-@include adaptive(PC) {
+@include adaptive(tablet) {
 
+  body{
+    background: grey;
+  }
+
+  article{
+    border: 1px solid black;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  header{
+    height: 5vh;
+    font-size: 20px;
+    line-height: 5vh;
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 10, .9);
+    color: rgba(192, 0, 0, .9);
+  }
+
+  .description{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    background: url("/../templates/Images/bgCasino.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .description p{
+    //border: 1px solid black;
+    margin: 0px;
+    width: 90%;
+    margin: auto;
+
+    //position: relative;
+  }
+
+  .description>p:nth-child(1){
+    box-sizing: border-box;
+    font-size: 25px;
+    color: white;
+  }
+  //.description>p:nth-child(2){
+  //  font-size: 14px;
+  //  color: lightgrey;
+  //  margin-top: 20px;
+  //}
+  .description>p:nth-child(3){
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    background: rgba(26, 68, 55, .4);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;
+  }
+
+  .casino{
+    width: 100%;
+    height: 35px;
+    //border: 1px solid black;
+    background: rgb(29,29,29);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .casino__part{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: white;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+
+    &>div{
+      //border: 1px solid red;
+      font-size: 16px;
+      color: black;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      //display: inline-block;
+      //vertical-align: top;
+      //margin: 0px;
+      //padding: 0px;
+      //height: 100px;
+      //width: 25%;
+      box-sizing: border-box;
+      line-height: 35px;
+
+    }
+
+    &>div:nth-child(1){
+      border-radius: 50%;
+      overflow: hidden;
+      width: 15vw;
+      height: 10vh;
+      top: 3vh;
+      left: -80px;
+    }
+
+
+    &>div:nth-child(3){
+      width: 25%;
+    }
+
+    &>div:nth-child(4){
+      width: 10%;
+    }
+
+    & .casino__part_1{
+      position: relative;
+      left: 12px;
+
+      &>img{
+        width: 100%;
+        height: 100%;
+        background: rgb(160,0,201);
+      }
+
+    }
+
+    & .casino__part_2{
+      left: -20px;
+      top: 2vh;
+      height: 12vh;
+      width: 35%;
+      & span:nth-child(1){
+        font-weight: bold;
+        font-size: 40px;
+      }
+      & span{
+        font-size: 35px !important;
+        margin: 0px;
+        padding: 5px;
+        //line-height: 25px;
+        width: 100%;
+        display: block;
+        vertical-align: top;
+      }
+
+      & span:nth-child(2){
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+
+  casino__part_3{
+    width: 100%;
+    line-height: 0 !important;
+    padding-top: 10px !important;
+
+  }
+  #t1{
+    font-size: 0px !important;
+  }
+  //star Votes
+  .rate_widget {
+    overflow:   visible;
+    position:   relative;
+    width:      100% !important;
+    height:     22px;
+    top: 0px;
+    left: 75px;
+  }
+
+  .ratings_stars {
+    background: url('/../templates/Images/star_empty.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    height:     48px;
+    width:      44px;
+  }
+
+  .ratings_vote {
+    background: url('/../templates/Images/star_full.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .ratings_over {
+    background: url('/../templates/Images/star-full-icon.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .total_votes {
+    display: none;
+  }
+
+  .movie_choice {
+    font: 10px verdana, sans-serif;
+    margin: 0 auto 0px auto;
+    width: 100%;
+  }
+  .casino__part_4 {
+    display: none !important;
+  }
+  .casino__part_5{
+    width: 25%;
+    position: absolute !important;
+    top: 115px;
+    right: 70px;
+    &>.btn{
+      font-size: 20px;
+      width: 100%;
+      background: rgb(0,219,0);
+      height: 70px;
+      border-radius: 5px;
+      margin-top: 27px;
+
+    }
+  }
 
 }
 

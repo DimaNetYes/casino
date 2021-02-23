@@ -20,13 +20,13 @@
         <div class="casino__part">
             <div class="casino__part_1"><img src="<?=$casino->casino ?>" alt=""></div>
             <div class="casino__part_2">
+                <span id="cas_name"><?= $casino->name; ?></span>
                 <span><?= $casino->upTo; ?></span>
                 <span><?= $casino->bonus; ?></span>
                 <span><?= $casino->freespeen; ?></span>
-<!--                <span>+500 Zee Points</span>-->
             </div>
             <div class="casino__part_3 movie_choice">
-                <span style="font-size:10px">Rating</span>
+                <span style="font-size:10px" id="t1">Rating</span>
                 <div id="r<?=$key+1 ?>" class="rate_widget">
                     <div class="star_1 ratings_stars"></div>
                     <div class="star_2 ratings_stars"></div>
