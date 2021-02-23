@@ -1,4 +1,5 @@
 <?php include __DIR__ . '/../header.php'; ?>
+<div class="background-image"></div>
 <article>
     <header>PlayJosh</header>
     <div class="description">
