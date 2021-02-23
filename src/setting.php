@@ -4,7 +4,7 @@
 return [
     'db' => [
         'host' => 'localhost',
-        'dbname' => 'PlayJosh',
+        'dbname' => 'playjosh',
         'user' => 'root',
         'password' => '',
     ]

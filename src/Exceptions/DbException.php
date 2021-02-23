@@ -1,6 +1,6 @@
 <?php
 
-namespace testask\Exceptions;
+namespace testtask\Exceptions;
 
 class DbException extends \Exception
 {}
