@@ -134,12 +134,12 @@
     }
 
     &>.casino__part_1:after{
-      content: '';
-      position: absolute;
-      right: -66px;
-      top: -1px;
-      border: 50px solid transparent;
-      border-left: 21px solid rgb(160,0,201);
+      //content: '';
+      //position: absolute;
+      //right: -66px;
+      //top: -1px;
+      //border: 50px solid transparent;
+      //border-left: 21px solid rgb(160,0,201);
 
     }
 
@@ -233,7 +233,24 @@
     }
   }
 
+  .casino__part_5{
+    &>.btn{
+      font-size: 20px;
+      width: 85%;
+      background: rgb(0,219,0);
+      height: 40px;
+      border-radius: 5px;
+      margin-top: 27px;
+    }
+  }
 
+  #t{
+    font-size: 20px;
+  }
 }
 
+@include adaptive(PC) {
+
+
+}
 

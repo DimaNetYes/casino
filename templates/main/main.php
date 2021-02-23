@@ -14,17 +14,20 @@
             <div>RATING</div>
             <div>PLAY NOW</div>
         </div>
+<?php foreach ($casinos as $key => $casino): ?>
+<!--        <p style="font-size:30px;"> --><?php //print_r($casino); break;?><!--</p>-->
+
         <div class="casino__part">
-            <div class="casino__part_1"><img src="/templates/Images/playzee-logo.png" alt=""></div>
+            <div class="casino__part_1"><img src="<?=$casino->casino ?>" alt=""></div>
             <div class="casino__part_2">
-                <span>100% Up to</span>
-                <span>$1500</span>
-                <span>+150 zee spins</span>
-                <span>+500 Zee Points</span>
+                <span><?= $casino->upTo; ?></span>
+                <span><?= $casino->bonus; ?></span>
+                <span><?= $casino->freespeen; ?></span>
+<!--                <span>+500 Zee Points</span>-->
             </div>
             <div class="casino__part_3 movie_choice">
                 <span style="font-size:10px">Rating</span>
-                <div id="r1" class="rate_widget">
+                <div id="r<?=$key+1 ?>" class="rate_widget">
                     <div class="star_1 ratings_stars"></div>
                     <div class="star_2 ratings_stars"></div>
                     <div class="star_3 ratings_stars"></div>
@@ -37,19 +40,14 @@
                 <div class="total_rating">vote data</div>
             </div>
             <div class="casino__part_5">
-                <button>Play</button>
+                <button data-index="1" class="btn">Play</button>
             </div>
         </div>
-    </section>
-
-</article>
 
 
-<?php foreach ($casinos as $casino): ?>
-<!--    <h2>--><?//= $casino['name'] ?><!--</h2>-->
-<!--    <p>--><?//= $casino['text'] ?><!--</p>-->
-<!--    <hr>-->
-<?php print_r($casino->casino); ?>
 
+<?php //break;?>
 <?php endforeach; ?>
+    </section>
+</article>
 <?php include __DIR__ . '/../footer.php'; ?>

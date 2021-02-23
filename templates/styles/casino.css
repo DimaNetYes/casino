@@ -92,13 +92,6 @@
         width: 100%;
         height: 100%;
         background: #a000c9; }
-    .casino__part > .casino__part_1:after {
-      content: '';
-      position: absolute;
-      right: -66px;
-      top: -1px;
-      border: 50px solid transparent;
-      border-left: 21px solid #a000c9; }
     .casino__part .casino__part_2 span {
       font-size: 12px;
       margin: 0px;
@@ -170,6 +163,17 @@
       padding: 5px;
       position: absolute;
       font: 25px verdana, sans-serif;
-      font-weight: bold; } }
+      font-weight: bold; }
+
+  .casino__part_5 > .btn {
+    font-size: 20px;
+    width: 85%;
+    background: #00db00;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 27px; }
+
+  #t {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=casino.css.map */

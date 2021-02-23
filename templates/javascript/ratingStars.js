@@ -40,7 +40,7 @@ function set_votes(widget) {
     $(widget).find('.star_' + avg).nextAll().removeClass('ratings_vote');
     $(widget).find('.total_votes').text(votes + ' votes recorded');
 
-    $('.casino__part_4').find('.total_rating').text(exact * 2);
+    $(widget).parent().next().find('.total_rating').text(exact * 2); //.total.rating
 }
 
 $('.ratings_stars').bind('click', function() {
