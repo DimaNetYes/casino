@@ -18,7 +18,7 @@
 }
 @include adaptive(PC){
   body{
-    //background: url("/../templates/Images/bgmain.jpg") no-repeat;
+    //background: url("https://simplename.pp.ua/testtask/templates/Images/bgmain.jpg") no-repeat;
     //background-size: cover;
     //filter: blur(8px);
     //-webkit-filter: blur(8px);
@@ -30,7 +30,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url( "/../templates/Images/bgmain.jpg" );
+    background-image: url( "https://simplename.pp.ua/testtask/templates/Images/bgmain.jpg" );
     width: 100%;
     height: 100%;
     -webkit-filter: blur(5px);
@@ -81,7 +81,7 @@
 
   .casino{
     width: 100%;
-    height: 35px;
+    height: 45px;
     //border: 1px solid black;
     background: rgb(29,29,29);
     -webkit-border-radius: 3px;
@@ -100,28 +100,74 @@
       display: inline-block;
       margin: 0px;
       padding: 0px;
-      height: 35px;
+      height: 45px;
       width: 25%;
       box-sizing: border-box;
-      line-height: 35px;
+      line-height: 45px;
     }
 
     &>div:nth-child(3){
-      width: 15%;
+      width: 20%;
     }
 
     &>div:nth-child(4){
-      width: 10%;
+      width: 15%;
     }
+    &>div:nth-child(5){
+      width: 15%;
+    }
+  }
+
+  #emblem{
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    background: rgb(75,225,0);
+    z-index: 3;
+    font-size: 15px;
+    font-weight: bold;
+    left: -10px;
+    top: -10px;
+
+    &:after{
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: 0px;
+      border: 20px solid transparent;
+      border-top: 14px solid rgb(75,225,0);
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: -10px;
+      border: 20px solid transparent;
+      border-bottom: 20px solid rgb(75,225,0);
+    }
+  }
+  #shadow:after{
+    content: '';
+    position: absolute;
+    right: 161px;
+    top: 22px;
+    border: 8px solid transparent;
+    border-bottom: 8px solid rgb(193,94,0);
+    transform: rotate(
+                    45deg
+    );
+    filter: grayscale(42%);
+    opacity: .8;
   }
 
   .casino__part{
     width: 100%;
-    height: 100px;
+    height: 120px;
     //border: 1px solid green;
     border-radius: 3px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    position: relative;
 
     &>div{
       //border: 1px solid green;
@@ -132,19 +178,28 @@
       vertical-align: top;
       margin: 0px;
       padding: 0px;
-      height: 100px;
-      width: 25%;
+      height: 120px;
+      //width: 25%;
       box-sizing: border-box;
       line-height: 35px;
 
     }
-
+    &>div:nth-child(2){
+      width: 25%;
+    }
     &>div:nth-child(3){
-      width: 15%;
+      width: 25%;
     }
 
     &>div:nth-child(4){
-      width: 10%;
+      width: 20%;
+    }
+
+    &>div:nth-child(5){
+      width: 15%;
+    }
+    &>div:nth-child(6){
+      width: 15%;
     }
 
     & .casino__part_1{
@@ -171,19 +226,20 @@
       display: none;
     }
     & .casino__part_2{
-
+      padding-top: 15px;
+      box-sizing: border-box;
       & span{
         font-size: 12px;
         margin: 0px;
         padding: 0px;
         height: 25px;
-        line-height: 25px;
+        line-height: 20px;
         width: 100%;
         display: block;
         vertical-align: top;
       }
 
-      & span:nth-child(2){
+      & span:nth-child(3){
         font-weight: bold;
         font-size: 18px;
       }
@@ -199,40 +255,41 @@
   .rate_widget {
     overflow:   visible;
     position:   relative;
-    width:      100% !important;
+    width:      105% !important;
     height:     22px;
-    top: 15px;
+    top: 35px;
+    left: -30px;
   }
 
   .ratings_stars {
-    background: url('/../templates/Images/star_empty.png') no-repeat;
+    background: url('https://simplename.pp.ua/testtask/templates/Images/star_empty.png') no-repeat;
     background-size: contain;
     background-position: center;
     display: inline-block;
-    height:     28px;
-    width:      24px;
+    height:     23px;
+    width:      22px;
   }
 
   .ratings_vote {
-    background: url('/../templates/Images/star_full.png') no-repeat;
+    background: url('https://simplename.pp.ua/testtask/templates/Images/star_full.png') no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   .ratings_over {
-    background: url('/../templates/Images/star-full-icon.png') no-repeat;
+    background: url('https://simplename.pp.ua/testtask/templates/Images/star-full-icon.png') no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   .total_votes {
-    background: rgba(234,234,234, .5);
     color: black;
-    top: 36px;
-    left: 0;
+    top: -25px;
+    left: 70px;
     padding: 5px;
     position:   absolute;
-    font: 10px verdana, sans-serif;
+    font: 13px verdana, sans-serif;
+    font-weight: bold;
   }
 
   .movie_choice {
@@ -286,7 +343,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    //background-image: url( "/../templates/Images/bgmain.jpg" );
+    //background-image: url( "https://simplename.pp.ua/testtask/templates/Images/bgmain.jpg" );
     background: black;
     width: 100%;
     height: 100%;
@@ -308,7 +365,7 @@
 
   header{
     height: 5vh;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 5vh;
     text-align: left;
     padding-left: 30px;
@@ -319,9 +376,9 @@
 
   .description{
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 170px;
     box-sizing: border-box;
-    background: url("/../templates/Images/bgCasino.jpg") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/bgCasino.jpg") no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -337,8 +394,9 @@
 
   .description>p:nth-child(1){
     box-sizing: border-box;
-    font-size: 25px;
+    font-size: 45px;
     color: white;
+    text-align: left;
   }
   //.description>p:nth-child(2){
   //  font-size: 14px;
@@ -346,26 +404,43 @@
   //  margin-top: 20px;
   //}
   .description>p:nth-child(3){
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     margin-top: 15px;
-    background: rgba(26, 68, 55, .4);
+    background: rgba(26, 68, 55, .8);
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
     top: 30px;
+    text-align: left;
+    padding-left: 40px;
+    box-sizing: border-box;
   }
 
   .casino{
     width: 100%;
     height: 35px;
     //border: 1px solid black;
-    background: rgb(29,29,29);
+    //background: rgb(29,29,29);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     box-sizing: border-box;
+    margin-top: -140px;
+  }
+
+  #emblem{
+    height: 60px;
+    position: absolute;
+    width: 310px;
+    background: rgb(76,225,0);
+    top: 0px;
+    right: 0px;
+    font-size: 20px;
+    line-height: 60px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
   }
 
   .casino__part{
@@ -376,7 +451,7 @@
     border: 1px solid black;
     border-radius: 25px;
     background: white;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     box-sizing: border-box;
 
     &>div{
@@ -397,8 +472,10 @@
 
     }
 
-    &>div:nth-child(1){
+    &>div:nth-child(2){
       border-radius: 50%;
+      border: 3px solid black;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0 ,0, .4);
       overflow: hidden;
       width: 15vw;
       height: 10vh;
@@ -407,11 +484,11 @@
     }
 
 
-    &>div:nth-child(3){
+    &>div:nth-child(4){
       width: 25%;
     }
 
-    &>div:nth-child(4){
+    &>div:nth-child(5){
       width: 10%;
     }
 
@@ -434,7 +511,9 @@
       width: 35%;
       & span:nth-child(1){
         font-weight: bold;
-        font-size: 40px;
+        font-size: 45px!important;
+        display: block;
+        margin-bottom: 30px;
       }
       & span{
         font-size: 35px !important;
@@ -442,12 +521,12 @@
         padding: 5px;
         //line-height: 25px;
         width: 100%;
-        display: block;
+        //float: left;
         vertical-align: top;
       }
 
       & span:nth-child(2){
-        font-weight: bold;
+        //font-weight: bold;
         font-size: 18px;
       }
     }
@@ -468,12 +547,12 @@
     position:   relative;
     width:      100% !important;
     height:     22px;
-    top: 0px;
+    top: 77px;
     left: 75px;
   }
 
   .ratings_stars {
-    background: url('/../templates/Images/star_empty.png') no-repeat;
+    background: url('https://simplename.pp.ua/testtask/templates/Images/star_empty.png') no-repeat;
     background-size: contain;
     background-position: center;
     display: inline-block;
@@ -482,13 +561,13 @@
   }
 
   .ratings_vote {
-    background: url('/../templates/Images/star_full.png') no-repeat;
+    background: url('https://simplename.pp.ua/testtask/templates/Images/star_full.png') no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   .ratings_over {
-    background: url('/../templates/Images/star-full-icon.png') no-repeat;
+    background: url('https://simplename.pp.ua/testtask/templates/Images/star-full-icon.png') no-repeat;
     background-size: contain;
     background-position: center;
   }
@@ -511,12 +590,13 @@
     top: 115px;
     right: 70px;
     &>.btn{
-      font-size: 20px;
-      width: 100%;
-      background: rgb(0,219,0);
+      width: 110%;
+      background: #00db00;
       height: 70px;
       border-radius: 5px;
       margin-top: 27px;
+      font-size: 40px;
+      color: white;
 
     }
   }

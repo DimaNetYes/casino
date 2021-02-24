@@ -9,7 +9,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("/../templates/Images/bgmain.jpg");
+    background-image: url("https://simplename.pp.ua/testtask/templates/Images/bgmain.jpg");
     width: 100%;
     height: 100%;
     -webkit-filter: blur(5px);
@@ -51,7 +51,7 @@
 
   .casino {
     width: 100%;
-    height: 35px;
+    height: 45px;
     background: #1d1d1d;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -66,21 +66,60 @@
       display: inline-block;
       margin: 0px;
       padding: 0px;
-      height: 35px;
+      height: 45px;
       width: 25%;
       box-sizing: border-box;
-      line-height: 35px; }
+      line-height: 45px; }
     .casino__title > div:nth-child(3) {
-      width: 15%; }
+      width: 20%; }
     .casino__title > div:nth-child(4) {
-      width: 10%; }
+      width: 15%; }
+    .casino__title > div:nth-child(5) {
+      width: 15%; }
+
+  #emblem {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    background: #4be100;
+    z-index: 3;
+    font-size: 15px;
+    font-weight: bold;
+    left: -10px;
+    top: -10px; }
+    #emblem:after {
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: 0px;
+      border: 20px solid transparent;
+      border-top: 14px solid #4be100; }
+    #emblem:before {
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: -10px;
+      border: 20px solid transparent;
+      border-bottom: 20px solid #4be100; }
+
+  #shadow:after {
+    content: '';
+    position: absolute;
+    right: 161px;
+    top: 22px;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #c15e00;
+    transform: rotate(45deg);
+    filter: grayscale(42%);
+    opacity: .8; }
 
   .casino__part {
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-radius: 3px;
     margin-bottom: 20px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    position: relative; }
     .casino__part > div {
       background: white;
       font-size: 16px;
@@ -89,14 +128,19 @@
       vertical-align: top;
       margin: 0px;
       padding: 0px;
-      height: 100px;
-      width: 25%;
+      height: 120px;
       box-sizing: border-box;
       line-height: 35px; }
+    .casino__part > div:nth-child(2) {
+      width: 25%; }
     .casino__part > div:nth-child(3) {
-      width: 15%; }
+      width: 25%; }
     .casino__part > div:nth-child(4) {
-      width: 10%; }
+      width: 20%; }
+    .casino__part > div:nth-child(5) {
+      width: 15%; }
+    .casino__part > div:nth-child(6) {
+      width: 15%; }
     .casino__part .casino__part_1 {
       position: relative; }
       .casino__part .casino__part_1 > img {
@@ -105,18 +149,21 @@
         background: #a000c9; }
     .casino__part #cas_name {
       display: none; }
-    .casino__part .casino__part_2 span {
-      font-size: 12px;
-      margin: 0px;
-      padding: 0px;
-      height: 25px;
-      line-height: 25px;
-      width: 100%;
-      display: block;
-      vertical-align: top; }
-    .casino__part .casino__part_2 span:nth-child(2) {
-      font-weight: bold;
-      font-size: 18px; }
+    .casino__part .casino__part_2 {
+      padding-top: 15px;
+      box-sizing: border-box; }
+      .casino__part .casino__part_2 span {
+        font-size: 12px;
+        margin: 0px;
+        padding: 0px;
+        height: 25px;
+        line-height: 20px;
+        width: 100%;
+        display: block;
+        vertical-align: top; }
+      .casino__part .casino__part_2 span:nth-child(3) {
+        font-weight: bold;
+        font-size: 18px; }
 
   .casino__part_3 {
     width: 100%;
@@ -126,36 +173,37 @@
   .rate_widget {
     overflow: visible;
     position: relative;
-    width: 100% !important;
+    width: 105% !important;
     height: 22px;
-    top: 15px; }
+    top: 35px;
+    left: -30px; }
 
   .ratings_stars {
-    background: url("/../templates/Images/star_empty.png") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/star_empty.png") no-repeat;
     background-size: contain;
     background-position: center;
     display: inline-block;
-    height: 28px;
-    width: 24px; }
+    height: 23px;
+    width: 22px; }
 
   .ratings_vote {
-    background: url("/../templates/Images/star_full.png") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/star_full.png") no-repeat;
     background-size: contain;
     background-position: center; }
 
   .ratings_over {
-    background: url("/../templates/Images/star-full-icon.png") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/star-full-icon.png") no-repeat;
     background-size: contain;
     background-position: center; }
 
   .total_votes {
-    background: rgba(234, 234, 234, 0.5);
     color: black;
-    top: 36px;
-    left: 0;
+    top: -25px;
+    left: 70px;
     padding: 5px;
     position: absolute;
-    font: 10px verdana, sans-serif; }
+    font: 13px verdana, sans-serif;
+    font-weight: bold; }
 
   .movie_choice {
     font: 10px verdana, sans-serif;
@@ -215,7 +263,7 @@
 
   header {
     height: 5vh;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 5vh;
     text-align: left;
     padding-left: 30px;
@@ -225,9 +273,9 @@
 
   .description {
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 170px;
     box-sizing: border-box;
-    background: url("/../templates/Images/bgCasino.jpg") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/bgCasino.jpg") no-repeat;
     background-size: cover;
     background-position: center; }
 
@@ -238,28 +286,44 @@
 
   .description > p:nth-child(1) {
     box-sizing: border-box;
-    font-size: 25px;
-    color: white; }
+    font-size: 45px;
+    color: white;
+    text-align: left; }
 
   .description > p:nth-child(3) {
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     margin-top: 15px;
-    background: rgba(26, 68, 55, 0.4);
+    background: rgba(26, 68, 55, 0.8);
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
-    top: 30px; }
+    top: 30px;
+    text-align: left;
+    padding-left: 40px;
+    box-sizing: border-box; }
 
   .casino {
     width: 100%;
     height: 35px;
-    background: #1d1d1d;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-top: -140px; }
+
+  #emblem {
+    height: 60px;
+    position: absolute;
+    width: 310px;
+    background: #4ce100;
+    top: 0px;
+    right: 0px;
+    font-size: 20px;
+    line-height: 60px;
+    border-top-right-radius: 15px;
+    font-weight: bold; }
 
   .casino__part {
     position: relative;
@@ -269,7 +333,7 @@
     border: 1px solid black;
     border-radius: 25px;
     background: white;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     box-sizing: border-box; }
     .casino__part > div {
       font-size: 16px;
@@ -279,16 +343,18 @@
       vertical-align: top;
       box-sizing: border-box;
       line-height: 35px; }
-    .casino__part > div:nth-child(1) {
+    .casino__part > div:nth-child(2) {
       border-radius: 50%;
+      border: 3px solid black;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
       overflow: hidden;
       width: 15vw;
       height: 10vh;
       top: 3vh;
       left: -80px; }
-    .casino__part > div:nth-child(3) {
-      width: 25%; }
     .casino__part > div:nth-child(4) {
+      width: 25%; }
+    .casino__part > div:nth-child(5) {
       width: 10%; }
     .casino__part .casino__part_1 {
       position: relative;
@@ -304,16 +370,16 @@
       width: 35%; }
       .casino__part .casino__part_2 span:nth-child(1) {
         font-weight: bold;
-        font-size: 40px; }
+        font-size: 45px !important;
+        display: block;
+        margin-bottom: 30px; }
       .casino__part .casino__part_2 span {
         font-size: 35px !important;
         margin: 0px;
         padding: 5px;
         width: 100%;
-        display: block;
         vertical-align: top; }
       .casino__part .casino__part_2 span:nth-child(2) {
-        font-weight: bold;
         font-size: 18px; }
 
   casino__part_3 {
@@ -329,11 +395,11 @@
     position: relative;
     width: 100% !important;
     height: 22px;
-    top: 0px;
+    top: 77px;
     left: 75px; }
 
   .ratings_stars {
-    background: url("/../templates/Images/star_empty.png") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/star_empty.png") no-repeat;
     background-size: contain;
     background-position: center;
     display: inline-block;
@@ -341,12 +407,12 @@
     width: 44px; }
 
   .ratings_vote {
-    background: url("/../templates/Images/star_full.png") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/star_full.png") no-repeat;
     background-size: contain;
     background-position: center; }
 
   .ratings_over {
-    background: url("/../templates/Images/star-full-icon.png") no-repeat;
+    background: url("https://simplename.pp.ua/testtask/templates/Images/star-full-icon.png") no-repeat;
     background-size: contain;
     background-position: center; }
 
@@ -367,11 +433,12 @@
     top: 115px;
     right: 70px; }
     .casino__part_5 > .btn {
-      font-size: 20px;
-      width: 100%;
+      width: 110%;
       background: #00db00;
       height: 70px;
       border-radius: 5px;
-      margin-top: 27px; } }
+      margin-top: 27px;
+      font-size: 40px;
+      color: white; } }
 
 /*# sourceMappingURL=casino.css.map */

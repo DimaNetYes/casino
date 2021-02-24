@@ -38,7 +38,7 @@ function set_votes(widget) {
 
     $(widget).find('.star_' + avg).prevAll().andSelf().addClass('ratings_vote');
     $(widget).find('.star_' + avg).nextAll().removeClass('ratings_vote');
-    $(widget).find('.total_votes').text(votes + ' votes recorded');
+    $(widget).find('.total_votes').text('Rating(' + votes + ')');
 
     $(widget).parent().next().find('.total_rating').text(exact * 2); //.total.rating
 }

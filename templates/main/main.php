@@ -19,6 +19,10 @@
 <!--        <p style="font-size:30px;"> --><?php //print_r($casino); break;?><!--</p>-->
 
         <div class="casino__part">
+            <div id="emblem">
+                <?= $casino->sign ?>
+                <div id="shadow"></div>
+            </div>
             <div class="casino__part_1"><img src="<?=$casino->casino ?>" alt=""></div>
             <div class="casino__part_2">
                 <span id="cas_name"><?= $casino->name; ?></span>
@@ -27,14 +31,14 @@
                 <span><?= $casino->freespeen; ?></span>
             </div>
             <div class="casino__part_3 movie_choice">
-                <span style="font-size:10px" id="t1">Rating</span>
+<!--                <span style="font-size:10px" id="t1">Rating</span>-->
                 <div id="r<?=$key+1 ?>" class="rate_widget">
                     <div class="star_1 ratings_stars"></div>
                     <div class="star_2 ratings_stars"></div>
                     <div class="star_3 ratings_stars"></div>
                     <div class="star_4 ratings_stars"></div>
                     <div class="star_5 ratings_stars"></div>
-                    <div class="total_votes">vote data</div>
+                    <div class="total_votes">Rating()</div>
                 </div>
             </div>
             <div class="casino__part_4">
